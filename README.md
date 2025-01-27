@@ -11,7 +11,7 @@ Eine einfache Anwendung, um Ausgaben und Einnahmen zu verwalten.
 ## Installation
 1. Klone dieses Repository:
 
-    git clone <repository-url>
+    git clone https://github.com/RinChise/finanzapp.git
 
 2. Installiere die Abhängigkeiten:
     

@@ -10,8 +10,8 @@ class DatabaseConnector:
         self.connection = None
 
     def connect(self):
+        """Stellt die Verbindung zur MySQL-Datenbank her."""
         try:
-            # Verbindung zur Datenbank herstellen
             self.connection = mysql.connector.connect(
                 host=self.host,
                 user=self.user,
@@ -19,12 +19,17 @@ class DatabaseConnector:
                 database=self.database
             )
             if self.connection.is_connected():
-                print("\nVerbindung zur Datenbank erfolgreich hergestellt!")
+                return True
         except Error as e:
-            print(f"Fehler bei der Verbindung: {e}")
+            if "1045" in str(e):  # Fehler: Access denied
+                print("Falsches Passwort!")
+            else:
+                print(f"Fehler bei der Verbindung: {e}")
+            self.connection = None
+        return False
 
     def close(self):
-        # Verbindung schließen
-        if self.connection.is_connected():
+        """Schließt die Verbindung zur Datenbank."""
+        if self.connection and self.connection.is_connected():
             self.connection.close()
-            print("Verbindung geschlossen.")
+            print("Verbindung zur Datenbank geschlossen.")

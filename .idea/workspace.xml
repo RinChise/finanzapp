@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bac13b2-4474-4c54-b8e0-54458c5a6efe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/finanzapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/finanzapp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db_connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/db_connector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +51,7 @@
   "keyToString": {
     "Python.db_connector.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.ui_handler.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
